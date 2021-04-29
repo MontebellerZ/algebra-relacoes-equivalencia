@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv='cache-control' content='no-cache'>
+	<meta charset="utf-8">
+	<title>Algebra - Relações de Equivalência</title>
+
+	<script src="https://kit.fontawesome.com/092d3f6b65.js" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript" src="index.js"></script>
+</head>
+<body>
+	<label class="titulo">Conjunto S = { <input type="text" id="conjunto" placeholder="ex: 1, 2.3, 4.7, 5" value="1, 2, 3, 4, 5"> } (use . para números quebrados e , para separar os itens)</label>
+
+	<br><br><br>
+
+	<label class="titulo">Pares Ordenados:</label>
+	<button class="comando" id="adicionar" onclick="adicionar()">Adicionar Par</button>
+	<button class="comando" id="remover" onclick="remover()">Remover Último Par</button>
+	<button class="comando" id="limpar" onclick="limpar()">Limpar Campos</button>
+	<button class="comando" id="addTexto" onclick="addTexto()">Adicionar Como Texto</button>
+	<div id="pares">
+		<b>Reflexiva:</b> <i class="fas fa-times"></i> | <b>Simétrica:</b> <i class="fas fa-check"></i> | <b>Transitiva:</b> <i class="fas fa-check"></i>
+		<br><br>
+		p = { }
+	</div>
+
+	<br><br><br>
+
+	<label class="titulo">Fechos Resultantes:</label>
+	<button id="reflexiva" class="calcular" onclick="calcular(1)">Calcular Reflexiva</button>
+	<button id="simetrica" class="calcular" onclick="calcular(2)">Calcular Simétrica</button>
+	<button id="transitiva" class="calcular" onclick="calcular(3)">Calcular Transitiva</button>
+	<div id="resultado"></div>
+</body>
+</html>
